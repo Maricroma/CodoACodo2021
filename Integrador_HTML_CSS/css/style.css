@@ -1,0 +1,245 @@
+/*estilos globales*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* ::before, :after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Lato','sans-serif';
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.img {
+    max-width: 100%;
+}
+
+/*header*/
+
+.site-header {
+    background: url(../img/header.jpg) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+    min-height: 60rem;
+    padding: 1rem 0 3rem 0;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+
+.listaHeader a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 2.2rem;
+    float: right;
+}
+
+.listaHeader a:hover {
+    color:#767CC2;
+}
+
+.header-title {
+    color:antiquewhite;
+    font-size: 5rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+.barra {
+    padding-top: 3rem;
+}
+
+.header-sub {
+    padding-top: 200px;
+    color: antiquewhite;
+    font-size: 2.5rem;
+}
+
+/*utilidades*/
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar_texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.contenido {
+    max-width: 800;
+}
+
+.iconosSobreNosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono {
+    text-align: center;
+}
+
+.contenido-anuncios {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: justify;
+    height: 630px;
+    margin: auto;
+}
+
+.anuncio {
+    width: 350px;
+    height: 610px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.25s;
+    border: 1px solid #C4C8EA;
+    background-color: #ECEDF7;
+}
+
+.anuncio:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.contenido-anuncio {
+    padding: 2rem;
+}
+
+.contenido-anuncio h3,
+.contenido-anuncio p {
+    margin: 0;
+}
+
+.precio {
+    color: #718100;
+    font-weight: 700;
+}
+
+.imagenes-anuncio {
+    width: 330px;
+    height: 220px;
+}
+
+.iconos-anuncio {
+    padding: 2rem;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*botones*/
+
+.boton {
+    color: whitesmoke;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-naranja {
+    background-color: #DB7719;
+    border-radius: 6px;
+}
+
+.boton-verde {
+    background-color: #71b100;
+    border-radius: 6px;
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imagen-contacto {
+    background: url(../img/encuentra.jpg) center center;
+    background-size: cover;
+    height: 48rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    flex: 0 0 95%;
+    color: antiquewhite;
+    font-size: 2.5rem;
+}
+
+.contenido-contacto p{
+    font-size: 1.8rem;
+}
+
+.contactanos {
+    display: flex;
+    justify-content: flex-start;
+    width: min-content;
+    border-radius: 6px;
+}
+
+/*footer*/
+.site-footer {
+    background: #333333;
+    margin: 0;
+}
+
+.contenedor-footer{ 
+    padding: 3rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.copyright {
+    margin: 0;
+    padding-top: 3rem;
+    color: antiquewhite;
+}
