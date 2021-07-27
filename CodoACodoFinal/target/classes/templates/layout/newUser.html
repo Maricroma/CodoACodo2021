@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<section th:fragment="newUser">
+    <div id="newUser" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" th:text="#{action.add}">Agregar Usuario</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <form th:action="@{/signup}" th:object="${user}" method="POST" class="was-validated">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="name" th:text="#{user.name}">Nombre Completo</label>
+                            <input type="text" class="form-control" name="name" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="dni" th:text="#{user.dni}">DNI</label>
+                            <input type="text" class="form-control" name="dni" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="username" th:text="#{user.username}">Nombre de usuario</label>
+                            <input type="text" class="form-control" name="username" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" th:text="#{user.password}">Contraseña</label>
+                            <input type="text" class="form-control" name="password" required="true">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn primary" type="submit" th:text="#{action.save}">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
